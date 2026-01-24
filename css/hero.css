@@ -1,0 +1,64 @@
+#hero {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
+  padding: 0; 
+  overflow: hidden;
+}
+
+.text-side {
+  flex: 1; 
+  background-color: rgb(232, 244, 234); 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px; /
+}
+
+.text-side h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 48px; 
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #333;
+}
+
+.text-side p {
+  font-weight: 400;
+  margin-bottom: 40px;
+  line-height: 1.5;
+  color: #555;
+  font-size: 18px;
+}
+
+.text-side button {
+  width: fit-content; 
+  padding: 12px 30px;
+  background: transparent;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 1px solid #333;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.text-side button:hover {
+    background: #333;
+    color: white;
+}
+
+.hero-image {
+  flex: 1; 
+  position: relative;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  object-position: center;
+}
