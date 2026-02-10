@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Prasanna Jha - Portfolio</title>
+
+    <meta name="description" content="Prasanna Jha is a Developer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/skill.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/education.css" />
+  </head>
+
+  <body>
+    <nav class="sidebar">
+      <i
+        id="hamburger"
+        class="fa-solid fa-bars sidebar_hamburger"
+        role="button"
+        tabindex="0"
+        aria-label="Toggle sidebar"
+      >
+      </i>
+      <div class="sidebar_content">
+        <img
+          class="sidebar_image"
+          src="images/pp.jpeg"
+          alt="Prasanna Jha's profile photo"
+        />
+        <h1 class="sidebar_name">Prasanna Jha</h1>
+        <h3 class="sidebar__job">
+          Engineering <span class="sidebar__country">Student</span>
+        </h3>
+        <ul class="sidebar_list">
+          <li class="sidebar_list_item">
+            <a href="#hero">home</a>
+          </li>
+          <li class="sidebar_list_item">
+            <a href="#about">about</a>
+          </li>
+          <li class="sidebar_list_item">
+            <a href="#education">education</a>
+          </li>
+          <li class="sidebar_list_item">
+            <a href="#skills">skills</a>
+          </li>
+          <li class="sidebar_list_item">
+            <a href="#contact">contact</a>
+          </li>
+        </ul>
+        <div class="sidebar_follow mt-6 align-center justify-center">
+          <h3 class="sidebar_follow1" style="font-family: playfair display">
+            <b>Follow Me</b>
+          </h3>
+          <div class="flex space-x-6 text-2xl" aria-label="Social links">
+            <a
+              href="https://www.facebook.com/happyboypj"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:text-blue-500 transition-colors"
+              aria-label="Facebook"
+            >
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+                ></path>
+              </svg>
+            </a>
+            <a
+              href="https://www.instagram.com/_prasanna.10"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:text-pink-500 transition-colors"
+              aria-label="Instagram"
+            >
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 448 512"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                ></path>
+              </svg>
+            </a>
+
+            <a
+              href="https://github.com/PrasannaJha"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:text-gray-900 transition-colors"
+              aria-label="GitHub"
+            >
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 496 512"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section id="hero">
+      <div class="text-side">
+      <h1>
+        Hi!<br />
+        I am Prasanna <br />
+      </h1>
+      <p>Electronics, Communication and Information Engineer.</p>
+      <button>Contact Me <i class="fa-solid fa-envelope"></i></button>
+      </div>
+
+      <div class="hero-image">
+        <img src="images/pp2.jpeg" alt="Prasanna Jha" class="main-img" />
+      </div>
+    </section>
+    <section id="about" class="section">
+      <p class="section_title">About Me</p>
+      <p class="section_subtitle">My Introduction</p>
+      <p>
+        <strong>Hi! I am Prasanna,an engineering student
+        pursuing a Bachelor's degree in Electronics, Communication and
+        Information Engineering at National College of Engineering, IOE.
+        I enjoy learning how hardware and software work together in real-world 
+        systems. I like turning theoretical knowledge into practical projects.
+        I enjoy exploring new technologies and tools related to engineering.
+        I aspire to work on technology that makes life simpler and smarter.</strong>
+      </p>
+      <div id="education" class="section">
+        <p class="section_title">Education</p>
+        <p class="section_subtitle">My education</p>
+        <div class="edu_container">
+          <div class="edu_box">
+            <h2>
+              +2 <br />
+              <p class="stream">[Science] &nbsp;&nbsp;&nbsp;[NEB]</p>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span> Apr 2021 - Sep 2023</span>
+            </h2>
+            <h3>Kathmandu Bernhardt SS & College</h3>
+          </div>
+          <div class="edu_box">
+            <h2>
+              Bachelor of Engineering<br />
+              <p class="stream">[BEI] &nbsp;&nbsp;&nbsp;[IOE]</p>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span>Dec 2023 - Running</span>
+            </h2>
+            <h3>National College of Engineering</h3>
+          </div>
+        </div>
+      </div>
+      <div class="about_skills">
+        <div>
+          <i class="fa-solid fa-ear-listen"></i>
+          <h3>Web development</h3>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-globe"></i>
+          <h3>Web design</h3>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-database"></i>
+          <h3>Machine learning</h3>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-mobile"></i>
+          <h3>Mobile application</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <p class="section_title">my speciality</p>
+      <p class="section_subtitle">my skills</p>
+
+      <div class="outer_box">
+        <div class="skill_box">
+          <p>HTML</p>
+          <div class="skill_grey_box">
+            <div class="skill_color_box">
+              <span>88%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="outer_box">
+        <div class="skill_box">
+          <p>CSS</p>
+          <div class="skill_grey_box">
+            <div
+              class="skill_color_box"
+              style="background-color: peru; width: 80%; color: peru"
+            >
+              <span>80%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="outer_box">
+        <div class="skill_box">
+          <p>C-progrmming</p>
+          <div class="skill_grey_box">
+            <div
+              class="skill_color_box"
+              style="
+                background-color: palevioletred;
+                width: 89%;
+                color: palevioletred;
+              "
+            >
+              <span>90%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="outer_box">
+        <div class="skill_box">
+          <p>Python</p>
+          <div class="skill_grey_box">
+            <div
+              class="skill_color_box"
+              style="background-color: burlywood; width: 65%; color: burlywood"
+            >
+              <span>45%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="outer_box">
+        <div class="skill_box">
+          <p>C++</p>
+          <div class="skill_grey_box">
+            <div
+              class="skill_color_box"
+              style="background-color: yellowgreen; width: 70%"
+            >
+              <span>85%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="contact" class="section">
+      <h2 class="section_title">Get in Touch</h2>
+      <p class="section_subtitle">contact</p>
+      <div class="contact__container outer_box">
+        <div class="contact__informations">
+          <div class="contact__information">
+            <div>
+              <i class="fa-solid fa-envelope"></i>
+              <path
+                d="M176 216h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16zm-16 80c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16zm96 121.13c-16.42 0-32.84-5.06-46.86-15.19L0 250.86V464c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V250.86L302.86 401.94c-14.02 10.12-30.44 15.19-46.86 15.19zm237.61-254.18c-8.85-6.94-17.24-13.47-29.61-22.81V96c0-26.51-21.49-48-48-48h-77.55c-3.04-2.2-5.87-4.26-9.04-6.56C312.6 29.17 279.2-.35 256 0c-23.2-.35-56.59 29.17-73.41 41.44-3.17 2.3-6 4.36-9.04 6.56H96c-26.51 0-48 21.49-48 48v44.14c-12.37 9.33-20.76 15.87-29.61 22.81A47.995 47.995 0 0 0 0 200.72v10.65l96 69.35V96h320v184.72l96-69.35v-10.65c0-14.74-6.78-28.67-18.39-37.77z"
+              ></path>
+            </div>
+            <h2>
+              <a href="mailto:prasannajha1000@gmail.com">prasannajha1000@gmail.com</a>
+            </h2>
+          </div>
+          <div class="contact__information">
+            <div>
+              <i class="fa-solid fa-location-dot"></i>
+              <path
+                d="M172.268 501.67C26.97 360.37 0 318.63 0 221.33 0 99.09 99.05 0 221.29 0S442.6 99.09 442.6 221.33c0 97.3-26.97 139.04-172.27 280.34-9.43 9.62-24.86 9.6-34.05 0zM221.3 304c46.88 0 85-38.12 85-85s-38.12-85-85-85-85 38.12-85 85 38.12 85 85 85z"
+              ></path>
+            </div>
+            <h2>Kathmandu , Nepal</h2>
+          </div>
+          <div class="contact__information">
+            <div>
+              <i class="fa-solid fa-phone"></i>
+              <path
+                d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"
+              ></path>
+            </div>
+            <h2><a href="tel:+9779746556410">+977-9746556410</a></h2>
+          </div>
+        </div>
+        <form class="contact__form relative" id="portfolio-contact-form">
+          <div class="relative">
+            <input
+              class="contact__input"
+              type="text"
+              id="name"
+              placeholder="Name"
+              name="name"
+              value=""
+            />
+          </div>
+          <div class="relative">
+            <input
+              class="contact__input"
+              type="email"
+              id="email"
+              placeholder="Email"
+              name="email"
+              value=""
+            />
+          </div>
+          <div class="relative">
+            <input
+              class="contact__input"
+              type="text"
+              id="subject"
+              placeholder="Subject"
+              name="subject"
+              value=""
+            />
+          </div>
+          <div class="relative">
+            <textarea
+              name="message"
+              id="message"
+              class="contact__textarea"
+              placeholder="Message"
+              rows="4"
+            ></textarea>
+          </div>
+          <input
+            style="display: none"
+            type="text"
+            id="source"
+            name="source"
+            value="Portfolio"
+          />
+          <div>
+            <button class="contact__button" type="submit">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <p class="copyright">
+      ©️ 2026 All rights reserved. Designed by Prasanna Jha.
+    </p>
+    <script>
+      const hamburger = document.querySelector("#hamburger");
+      const sidebar = document.querySelector(".sidebar");
+      hamburger.addEventListener("click", () => {
+        // toggle the sidebar open state and body shift
+        sidebar.classList.toggle("open");
+        document.body.classList.toggle("sidebar-open");
+        // also animate the hamburger icon
+        hamburger.classList.toggle("sidebar_hamburger_translate");
+      });
+    </script>
+  </body>
+</html>
